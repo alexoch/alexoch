@@ -1,3 +1,85 @@
-h1{
+/*
+    colors:
+            y:#ffb428
+            b:#14110c
+            w:#f7eddc
+    fonts:Oranienbaum    
+*/
+@font-face {
+    font-family: Or;
+    src: url(Oranienbaum.ttf);
+}
+body{
+    font-family: Or;
+    color:#14110c;
+    background: #f7eddc;
+}
+
+main{
+    margin: 0 auto;
+    width: 1000px;
     text-align: center;
+}
+.bio{
+    width: 100%;
+}
+.bio__img,.bio__text{
+    margin-top: 200px;
+}
+.bio__img{
+    display: inline-block;
+}
+.bio__img img{
+    width: 200px;
+    border-radius: 50px;
+}
+.bio__text{
+    display: inline-block;
+}
+.bio__text p{
+    text-align: left;
+    width: 300px;
+}
+/*
+----------------------------------
+*/
+
+
+#hex2 {
+  width: 150px;
+  height: 150px;
+}
+#color1 {
+  background-color: #ffb428; 
+}
+.hexagon-wrapper {
+  text-align: center;
+  margin: 20px;
+  position: relative;
+  display: inline-block;
+}
+.hexagon {
+  height: 100%;
+  width: calc(100% * 0.57735);
+  display: inline-block;
+}
+.hexagon:before {
+  position: absolute;
+  top: 0;
+  right: calc((100% / 2) - ((100% * 0.57735) / 2));
+  background-color: inherit;
+  height: inherit;
+  width: inherit;
+  content: '';
+  transform: rotateZ(60deg);
+}
+.hexagon:after {
+  position: absolute;
+  top: 0;
+  right: calc((100% / 2) - ((100% * 0.57735) / 2));
+  background-color: inherit;
+  height: inherit;
+  width: inherit;
+  content: '';
+  transform: rotateZ(-60deg);
 }
